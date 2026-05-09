@@ -1,0 +1,21 @@
+:root {
+    --black: #000000;
+    --blue: rgb(53 37 205);
+    --blue--op: #E2E8F0;
+    --white: white;
+    --gr: rgb(199 196 216);
+    --grr: rgb(121, 121, 121);
+    --grrr: rgb(83, 83, 83);
+    --gb: rgb(11 28 48);
+    --qw: rgb(70 69 85);
+    --fontff: Sans-serif;
+    --bb: rgb(211 228 254)
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fontff);
+}

@@ -1,0 +1,85 @@
+.business-s {
+    margin: 0 auto;
+    max-width: 1280px;
+    animation: fadeUp 2s ease;
+}
+
+.business {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem 2rem;
+    padding: 4rem;
+    gap: 2rem;
+    background-color: rgb(220 233 255);
+    max-width: 1280px;
+    border-radius: 1.5rem;
+}
+
+.business-h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    color: rgb(11 28 48);
+}
+
+.business-p {
+    text-align: center;
+    color: rgb(70 69 85);
+}
+
+.business-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin: auto;
+}
+
+.text-bus {
+    padding: 1rem 1.5rem;
+    width: 100%;
+    max-width: 24rem;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    outline: none;
+    border: 1px solid var(--grr);
+}
+
+.text-bus:focus {
+    outline: 3px solid var(--blue);
+}
+
+.sum-bus {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 0.75rem;
+    border: none;
+    cursor: pointer;
+    transition: opacity .3s ease;
+}
+
+.sum-bus:hover {
+    opacity: 0.9;
+}
+
+@media (min-width:368px) and (max-width:768px) {
+    .business {
+        padding: 2rem;
+    }
+
+    .business-h2 {
+        font-size: 2.2rem;
+    }
+
+    .business-form {
+        flex-direction: column;
+    }
+
+    .sum-bus {
+        width: 100%;
+    }
+}
