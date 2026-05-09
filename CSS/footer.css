@@ -12,7 +12,6 @@
     margin: 0 2rem;
     padding: 3rem 0;
     justify-content: space-between;
-    gap: 2rem;
 }
 
 .fot1-left {
@@ -36,6 +35,7 @@
 .fot1-right {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
 }
 
 .fot1-right-list {
