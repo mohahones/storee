@@ -12,6 +12,7 @@
     margin: 0 2rem;
     padding: 3rem 0;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .fot1-left {
@@ -97,7 +98,8 @@
     .fot1-right {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
-    .fot2{
+
+    .fot2 {
         flex-direction: column;
         gap: 1rem;
         align-items: center;
