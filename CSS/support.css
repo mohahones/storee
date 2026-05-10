@@ -1,5 +1,5 @@
 .support {
-    background-color: var(--blue);
+    background-color: var(--bluee);
     animation: fadeUp 1.6s ease;
 
 }
@@ -23,18 +23,19 @@
 }
 
 .sup-h2 {
-    color: var(--white);
+    color: var(--ww);
 }
 
 .sup-p {
-    color: rgb(255, 255, 255);
+    color: var(--ww);
     opacity: 0.8;
 }
 
 .svg-sup {
     width: 50px;
     height: 50px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--s-b);
     padding: 0.6rem;
     border-radius: 100%;
+    fill: var(--s-bb);
 }

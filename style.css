@@ -1,15 +1,27 @@
 :root {
     --black: #000000;
     --blue: rgb(53 37 205);
+    --bluee: rgb(53 37 205);
     --blue--op: #E2E8F0;
-    --white: white;
+    --white: rgb(255, 255, 255);
     --gr: rgb(199 196 216);
+    --gx: rgb(199 196 216);
     --grr: rgb(121, 121, 121);
     --grrr: rgb(83, 83, 83);
     --gb: rgb(11 28 48);
     --qw: rgb(70 69 85);
     --fontff: Sans-serif;
-    --bb: rgb(211 228 254)
+    --bb: rgb(211 228 254);
+    --ww: rgb(244, 239, 239);
+    --wh: rgb(241, 238, 238);
+    --whitee: white;
+    --star: #ffdbcc;
+    --grid: rgb(229 238 255);
+    --s-b: rgba(255, 255, 255, 0.1);
+    --s-bb: rgb(227, 227, 227);
+    --rr-bb: rgb(220 233 255);
+    --rr-bb-p: rgb(70 69 85);
+    --fot: rgb(203 219 245);
 }
 
 
@@ -18,4 +30,41 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--fontff);
+}
+
+body.active {
+    background-color: var(--white);
+    --black: rgb(228 225 235);
+    --blue: rgb(189 194 255);
+    --white: rgb(18 19 25);
+    --gb: white;
+    --qw: rgb(198 197 213);
+    --ww: rgb(19 30 140);
+    --wh: rgb(31 31 38);
+    --grrr: rgb(198 197 213);
+    --gr: rgb(69 70 83);
+    --bb: rgb(52 52 59);
+    --grr: rgb(198 197 213);
+    --whitee: rgb(13 14 20);
+    --gr: rgb(228 225 235);
+    --star: rgb(247 189 62);
+    --grid: rgb(31 31 38);
+    --bluee: rgb(129 140 248);
+    --s-b: rgb(18 19 25 / 0.2);
+    --s-bb: rgb(16 27 138);
+    --rr-bb: rgb(41 41 48);
+    --rr-bb-p: rgb(198 197 213);
+    --gx: rgb(69 70 83);
+    --fot: rgb(13 14 20);
+    --blue--op: rgb(69 70 83);
+}
+
+body.active .main-create:hover {
+    opacity: 1;
+    box-shadow: 0px 8px 12px -8px var(--blue);
+}
+
+body.active .text-bus {
+    color: rgb(228 225 235);
+    border: 1px solid #e4e1eb1a !important;
 }

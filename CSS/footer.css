@@ -1,10 +1,7 @@
-.fot {
-    background-color: rgb(203 219 245);
-}
-
 .fott {
     max-width: 1280px;
     margin: auto;
+    background-color: var(--fot);
 }
 
 .fot1 {
@@ -86,6 +83,10 @@
 
 .fot2-right:hover {
     color: var(--blue);
+}
+
+.for1-right-h3{
+    color: var(--black);
 }
 
 @media (min-width:368px) and (max-width:768px) {

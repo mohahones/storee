@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
-    width: auto;
+    width: 100%;
     margin: 0 auto;
     max-width: 1280px;
 }
@@ -32,13 +32,13 @@
     object-fit: cover;
     object-position: center;
     z-index: -1;
-    mask-image: linear-gradient(to right, transparent 15%, black);
-    -webkit-mask-image: linear-gradient(to right, transparent 15%, black);
+    mask-image: linear-gradient(to left, black 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.2) 60%, transparent 90%);
+    /* -webkit-mask-image: linear-gradient(to right, transparent 15%, black); */
 }
 
 .main-h2 {
     background-color: var(--blue);
-    color: var(--white);
+    color: var(--ww);
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 1px;
@@ -64,7 +64,7 @@
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: var(--blue);
-    transition: opacity 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     margin: 0.5rem;
     font-size: 1rem;
 }
@@ -72,7 +72,7 @@
 .main-create a {
     padding: 1.5rem;
     text-decoration: none;
-    color: var(--white);
+    color: var(--ww);
 }
 
 .main-create:hover {
@@ -81,13 +81,13 @@
 
 .main-sign {
     font-size: 1rem;
-    border: 1px solid var(--gr);
+    border: 1px solid var(--gx);
     letter-spacing: 1px;
     padding: 1rem;
     border-radius: 0.5rem;
     transition: all 0.2s ease-in-out;
     margin: 0.5rem;
-
+    background-color: var(--wh);
 }
 
 .main-sign a {
@@ -120,29 +120,42 @@
     }
 
     .main-h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .main-p {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .main-create a,
     .main-sign a {
         padding: 0.5rem;
+    }
 
+    .main-sign {
+        width: fit-content;
+    }
+
+
+    .btnm {
+        display: flex;
+        flex-direction: column;
     }
 
     .main-sign,
     .main-create {
-        font-size: 0.5rem;
-        padding: 0.5rem;
+        font-size: 0.7rem;
+        padding: 0.8rem;
         margin: 0.2rem;
     }
-    .main-landing-sub{
+
+    .main-landing-sub {
         gap: 1rem;
         justify-content: space-around;
         padding: 2rem;
     }
 
+    .no {
+        display: none;
+    }
 }

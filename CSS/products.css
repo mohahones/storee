@@ -1,11 +1,12 @@
 .products-ex {
     display: flex;
     flex-direction: column;
-    margin: 5rem auto 1rem;
+    margin: 2rem auto 0;
     max-width: 1280px;
     gap: 2rem;
     animation: fadeUp 1.2s ease;
-
+    background-color: var(--whitee);
+    padding: 3rem 0;
 }
 
 .products-grid {
@@ -18,6 +19,7 @@
 
 .grid-p-b {
     position: relative;
+    isolation: isolate;
     grid-column: 1/3;
     overflow: hidden;
     cursor: pointer;
@@ -29,7 +31,7 @@
 
 .img-best-prod {
     position: absolute;
-    z-index: -2;
+    z-index: -1;
     width: 100%;
     border-radius: 1.5rem;
     object-position: center;
@@ -49,7 +51,7 @@
 }
 
 .best-seller {
-    color: var(--white);
+    color: var(--ww);
     background-color: var(--blue);
     width: fit-content;
     padding: 0.5rem;
@@ -60,7 +62,7 @@
 
 .grid-be-se-h3 {
     font-size: 2rem;
-    color: var(--white);
+    color: white;
 }
 
 .g {
@@ -76,7 +78,7 @@
 }
 
 .star {
-    fill: #ffdbcc;
+    fill: var(--star);
 }
 
 .price-p-b {
@@ -88,7 +90,7 @@
     flex-direction: column;
     padding: 1.5rem;
     gap: 0.5rem;
-    background-color: rgb(229 238 255);
+    background-color: var(--grid);
     height: 100%;
     box-sizing: border-box;
 }
@@ -96,6 +98,7 @@
 .p-gridd-prod {
     padding-top: 1rem;
     font-weight: 300;
+    color: var(--black);
 }
 
 .price-grid-products {
@@ -128,13 +131,13 @@
     border-radius: 0.5rem;
     color: var(--blue);
     font-size: 1rem;
-    background-color: rgb(229 238 255);
+    background-color: var(--grid);
     transition: all 0.4s ease;
 }
 
 .button-grid:hover {
     background-color: var(--blue);
-    color: white;
+    color: var(--ww);
     cursor: pointer;
 }
 

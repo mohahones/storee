@@ -12,7 +12,7 @@
     margin: 3rem 2rem;
     padding: 4rem;
     gap: 2rem;
-    background-color: rgb(220 233 255);
+    background-color: var(--rr-bb);
     max-width: 1280px;
     border-radius: 1.5rem;
 }
@@ -20,12 +20,12 @@
 .business-h2 {
     font-size: 2.3rem;
     text-align: center;
-    color: rgb(11 28 48);
+    color: var(--gb);
 }
 
 .business-p {
     text-align: center;
-    color: rgb(70 69 85);
+    color: var(--rr-bb-p);
 }
 
 .business-form {
@@ -44,6 +44,7 @@
     font-size: 1rem;
     border-radius: 0.75rem;
     outline: none;
+    background-color: var(--wh);
     border: 1px solid var(--grr);
 }
 
@@ -54,7 +55,7 @@
 .sum-bus {
     padding: 1rem 3rem;
     font-size: 1rem;
-    color: var(--white);
+    color: var(--ww);
     background-color: var(--blue);
     border-radius: 0.75rem;
     border: none;

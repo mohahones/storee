@@ -7,7 +7,10 @@
     align-items: center;
     gap: 3rem;
     padding: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(from var(--white) r g b /0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgb(from var(--black) r g b / 0.1);
     z-index: 1;
     max-width: 1280px;
     margin: auto;
@@ -39,6 +42,7 @@
     border: none;
     border-radius: 0.5rem;
     font-size: 1rem;
+    background-color: rgb(from var(--white) r g b /0);
     transition: background-color 0.2s ease-in-out
 }
 
@@ -56,7 +60,7 @@
 }
 
 .nav-create a {
-    color: var(--white);
+    color: var(--ww);
 }
 
 .nav-create:hover {
@@ -117,6 +121,8 @@
 .nav-form input {
     font-size: 1rem;
     border: none;
+    background-color: var(--white);
+
 }
 
 .nav-list {
@@ -147,17 +153,37 @@
 
 .btn {
     display: flex;
+    align-items: center;
 }
 
 .nav-ll {
     display: flex;
     gap: 2rem;
     align-items: center;
+    background-color: var(--white) !important;
+
 }
 
 .vo {
     display: flex;
     gap: 1rem;
+}
+
+.light-mode svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--grrr);
+    transition: background-color 0.2s ease-in-out;
+    margin: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.light-mode {
+    border-radius: 0.5rem;
+}
+
+.light-mode:hover {
+    background-color: var(--blue--op);
 }
 
 @media (min-width:368px) and (max-width:768px) {
@@ -199,7 +225,6 @@
         left: 0;
         width: 260px;
         height: 100vh;
-        background: white;
         padding: 5rem 1rem;
         display: flex;
         justify-content: flex-start;
@@ -262,6 +287,16 @@
 
     .nav-logo {
         font-size: 1rem;
+    }
+
+    .light-mode svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .light-mode {
+        height: 24px;
+        cursor: pointer;
     }
 
 }
