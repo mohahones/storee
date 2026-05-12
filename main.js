@@ -3,37 +3,38 @@ function menu() {
   let navLinks = document.querySelector(".nav-ll");
   let navForm = document.querySelector(".nav-form");
 
-  menuB.addEventListener("click", (e) => {
-    e.stopPropagation();
-    navLinks.classList.toggle("active");
-  });
-
-  navForm.addEventListener("click", (e) => {
-    e.stopPropagation();
-  });
-
-  document.body.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-  });
+  if (menuB && navLinks && navForm) {
+    menuB.addEventListener("click", (e) => {
+      e.stopPropagation();
+      navLinks.classList.toggle("active");
+    });
+    document.body.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+    });
+    navForm.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
+  }
 }
 
 menu();
 
-function darkLight() {
-  let light = document.querySelector(".light-mode");
+export function darkLight() {
+  let light = document.querySelectorAll(".light-mode");
   let bodyy = document.body;
-  light.addEventListener("click", (e) => {
-    e.preventDefault();
-    bodyy.classList.toggle("active");
-    if (bodyy.classList.contains("active")) {
-      window.localStorage.setItem("darkMode", "enabled");
-    } else {
-      window.localStorage.setItem("darkMode", "disabled");
-    }
+  if (localStorage.getItem("darkMode") === "enabled") {
+    document.body.classList.add("active");
+  }
+  light.forEach((l) => {
+    l.addEventListener("click", (e) => {
+      e.preventDefault();
+      bodyy.classList.toggle("active");
+      if (bodyy.classList.contains("active")) {
+        window.localStorage.setItem("darkMode", "enabled");
+      } else {
+        window.localStorage.setItem("darkMode", "disabled");
+      }
+    });
   });
 }
 darkLight();
-
-if (localStorage.getItem("darkMode") === "enabled") {
-  document.body.classList.add("active");
-}

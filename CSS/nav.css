@@ -122,7 +122,7 @@
     font-size: 1rem;
     border: none;
     background-color: var(--white);
-
+    color: var(--black);
 }
 
 .nav-list {
@@ -180,6 +180,7 @@
 
 .light-mode {
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 .light-mode:hover {
@@ -215,8 +216,9 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding-left: 1rem;
         gap: 1rem;
+        padding-left: 1rem;
+
     }
 
     .nav-ll {
@@ -295,8 +297,12 @@
     }
 
     .light-mode {
-        height: 24px;
-        cursor: pointer;
+        display: none;
+    }
+
+    .light-mode-menu {
+        margin-left: 1rem;
+        display: flex;
     }
 
 }
@@ -318,7 +324,9 @@
 
     }
 
-
+    .light-mode-menu {
+        display: none;
+    }
 
     .nav-ll {
         display: none;
