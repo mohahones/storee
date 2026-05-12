@@ -222,6 +222,7 @@ main {
     outline: none;
     font-size: 1rem;
     background-color: var(--input-background);
+    width: 100%;
 }
 
 .input-filed::placeholder {
@@ -418,7 +419,9 @@ footer {
         justify-content: center;
         align-items: center;
     }
-
+    .right{
+        width: 80%;
+    }
     footer {
         flex-direction: column;
         gap: 1rem;
