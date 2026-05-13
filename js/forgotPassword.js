@@ -1,16 +1,3 @@
- function visibility() {
-  let vis = document.querySelector(".right-icon-address-11");
-  let inp = document.querySelector(".input-filed-11");
-  vis.addEventListener("click", (e) => {
-    if (inp.getAttribute("type") === "password") {
-      inp.setAttribute("type", "text");
-    } else {
-      inp.setAttribute("type", "password");
-    }
-  });
-}
-visibility();
-
 function sessionStoregForInputFiled() {
   function debounce(func, delay = 500) {
     let timeoutId;
@@ -42,4 +29,4 @@ sessionStoregForInputFiled();
 
 import { darkLight } from "../main.js";
 
-darkLight();
+darkLight()

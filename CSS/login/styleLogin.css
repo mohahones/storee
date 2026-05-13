@@ -40,15 +40,13 @@ body.active {
     background-color: var(--body-background);
 }
 
-main {
-    animation: fadeUp .4s ease;
-}
-
 /* left-section */
 .container {
     display: flex;
     margin: 0;
     height: 100vh;
+    animation: fadeUp .4s ease;
+
 }
 
 .left {
@@ -212,10 +210,14 @@ main {
 .input-container-for-icon:focus-within {
     outline: 1px solid var(--blue);
 }
+.input-container-for-icon:focus-within .right-icon-address{
+    color: var(--blue);
+}
 
 .right-icon-address {
     color: var(--gray-input-palceholder);
 }
+
 
 .input-filed {
     border: none;
