@@ -223,6 +223,7 @@ main {
     font-size: 1rem;
     background-color: var(--input-background);
     width: 100%;
+    color: var(--black);
 }
 
 .input-filed::placeholder {
