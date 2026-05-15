@@ -42,6 +42,6 @@ function sessionStoregForInputFiled() {
 }
 sessionStoregForInputFiled();
 
-import { darkLight } from "../main.js";
+import { darkLight } from "../../main.js";
 
 darkLight();
