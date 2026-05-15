@@ -122,10 +122,11 @@ body.active {
     border-radius: 0.75rem;
     backdrop-filter: blur(10px);
     border: 1px solid rgb(255, 255, 255, 0.3);
+    gap: 0.75rem;
 }
 
 .left-grid-icon {
-    padding-bottom: 1rem;
+   fill: var(--white-title);
 }
 
 .left-analytics-p {
@@ -143,6 +144,7 @@ body.active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0.5rem;
 }
 
 .right-content {
@@ -211,11 +213,11 @@ body.active {
     outline: 1px solid var(--blue);
 }
 .input-container-for-icon:focus-within .right-icon-address{
-    color: var(--blue);
+    fill: var(--blue);
 }
 
 .right-icon-address {
-    color: var(--gray-input-palceholder);
+    fill: var(--gray-input-palceholder);
 }
 
 

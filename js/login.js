@@ -1,12 +1,14 @@
- function visibility() {
-  let vis = document.querySelector(".right-icon-address-11");
-  let inp = document.querySelector(".input-filed-11");
-  vis.addEventListener("click", (e) => {
-    if (inp.getAttribute("type") === "password") {
-      inp.setAttribute("type", "text");
-    } else {
-      inp.setAttribute("type", "password");
-    }
+function visibility() {
+  let vis = document.querySelectorAll(".right-icon-address-11");
+  let inp = document.querySelectorAll(".input-filed-11");
+  vis.forEach((e , i) => {
+    e.addEventListener("click", () => {
+      if (inp[i].getAttribute("type") === "password") {
+        inp[i].setAttribute("type", "text");
+      } else {
+        inp[i].setAttribute("type", "password");
+      }
+    });
   });
 }
 visibility();
@@ -40,6 +42,6 @@ function sessionStoregForInputFiled() {
 }
 sessionStoregForInputFiled();
 
-import { darkLight } from "../main.js";
+import { darkLight } from "../../main.js";
 
 darkLight();
