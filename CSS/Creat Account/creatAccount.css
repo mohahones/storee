@@ -6,14 +6,9 @@
     --gray-input-border: rgb(199 196 216);
     --gray-input-palceholder: rgb(119 117 135);
     --body-background: rgb(248 249 255);
-    --img-shadow: rgb(53, 37, 205, 0.9);
-    --img-shadow2: rgba(77, 68, 227, 0.7);
     --input-background: rgb(248 249 255);
     --main-background: rgb(255 255 255);
-    --left-all-color: rgb(255 255 255);
     --input-submit: rgb(255 255 255);
-    --secure: rgb(216, 228, 255);
-    --icon-secure: rgb(53 37 205 / 0.1);
     --small-pass: rgb(119 117 135);
     --footer-backgruond: rgb(203 219 245);
     --font-family: Sans-serif;
@@ -38,24 +33,21 @@ body {
 body.active {
     --blue: rgb(189 194 255);
     --black: rgb(228 225 235);
-    --blue-step: rgb(52 52 59 );
+    --blue-step: rgb(52 52 59);
     --gray: rgb(198 197 213);
     --gray-input-border: rgb(69 70 83);
     --gray-input-palceholder: rgb(228, 225, 235, 0.5);
     --body-background: rgb(18 19 25);
-    --img-shadow: rgba(13, 14, 20, 0.4);
-    --img-shadow2: rgba(19, 30, 140, 0.6);
     --input-background: rgb(27 27 34);
     --main-background: rgb(27 27 34);
-    --secure: rgb(27 27 34);
     --input-submit: rgb(19 30 140);
-    --icon-secure: rgb(189 194 255 / 0.1);
     --footer-backgruond: rgb(18 19 25);
 }
 
-body.active footer{
+body.active footer {
     border: 1px solid rgb(69 70 83 / 0.2);
 }
+
 /* nav */
 nav {
     max-width: 1280px;
@@ -98,7 +90,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-        animation: fadeUp .4s ease;
+    animation: fadeUp .4s ease;
 }
 
 .main-content {

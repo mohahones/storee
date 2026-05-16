@@ -1,0 +1,401 @@
+:root {
+    --blue: rgb(53 37 205);
+    --blue-step: rgb(220 233 255);
+    --black: rgb(11 28 48);
+    --gray: rgb(70 69 85);
+    --gray-input-border: rgb(199 196 216);
+    --gray-input-palceholder: rgb(119 117 135);
+    --body-background: rgb(248 249 255);
+    --input-background: rgb(248 249 255);
+    --main-background: rgb(255 255 255);
+    --input-submit: rgb(255 255 255);
+    --small-pass: rgb(119 117 135);
+    --footer-backgruond: rgb(203 219 245);
+    --grid1-icon: rgb(220 233 255);
+    --grid1-icon-hover: rgb(226 223 255);
+    --grid1-shadow: rgb(0, 0, 0, 0.08);
+    --grid1-shadow2: rgb(0, 0, 0, 0.04);
+    --grid2-background: rgb(229 238 255);
+    --tw-shadow-color: rgb(0 0 0 / 0.1);
+    --font-family: Sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-color: #e5e7eb;
+}
+
+body {
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--body-background);
+}
+
+body.active {
+    --blue: rgb(189 194 255);
+    --black: rgb(228 225 235);
+    --blue-step: rgb(52 52 59);
+    --gray: rgb(198 197 213);
+    --gray-input-border: rgb(69 70 83);
+    --gray-input-palceholder: rgb(228, 225, 235, 0.5);
+    --body-background: rgb(18 19 25);
+    --input-background: rgb(27 27 34);
+    --main-background: rgb(27 27 34);
+    --input-submit: rgb(19 30 140);
+    --footer-backgruond: rgb(18 19 25);
+    --grid1-icon: rgb(52 52 59);
+    --grid1-icon-hover: rgb(119 140 248);
+    --grid2-background: rgb(27 27 34);
+
+}
+
+body.active footer {
+    border: 1px solid rgb(69 70 83 / 0.2);
+}
+
+
+/* nav */
+nav {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.nav-h2 {
+    font-size: 1.6rem;
+    color: var(--blue);
+}
+
+.nav-div-a {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-div-a a {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--gray);
+    transition: color .3s ease;
+}
+
+.nav-div-a a:hover {
+    color: var(--blue);
+}
+
+.nav-p-already {
+    text-align: center;
+    color: var(--gray);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.01em;
+    font-weight: 500;
+}
+
+.nav-p-already a {
+    text-decoration: none;
+    color: var(--blue);
+    transition: text-decoration .3s ease;
+    border: none;
+}
+
+.nav-p-already a:hover {
+    text-decoration: underline;
+}
+
+/* main */
+main {
+    padding: 3rem 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    animation: fadeUp .4s ease;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    max-width: 56rem;
+}
+
+.main-step {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.main-step-span {
+    color: var(--blue);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 800;
+}
+
+.main-step-sup {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.steps {
+    height: 0.25rem;
+    width: 3.5rem;
+    border-radius: 9999px;
+    background-color: var(--blue);
+}
+
+.main-details {
+    text-align: center;
+}
+
+.details-h1 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.details-p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    max-width: 28rem;
+    max-width: 28rem;
+    color: var(--gray);
+}
+
+.main-grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    gap: 2rem;
+}
+
+.grid1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    background-color: var(--main-background);
+    border: 1px solid var(--gray-input-border);
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all .4s ease, border-color .4s ease;
+}
+
+.grid1:hover {
+    box-shadow: 0 20px 25px -5px var(--grid1-shadow), 0 10px 10px -5px var(--grid1-shadow2);
+    transform: translateY(-2px);
+
+}
+
+.grid1.selected {
+    border-color: var(--blue);
+}
+
+.grid1-icon {
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--grid1-icon);
+    border-radius: 100%;
+    align-content: center;
+    transition: background-color .4s ease;
+}
+
+.icon-grid1 {
+    width: 40px;
+    height: 40px;
+    fill: var(--blue)
+}
+
+.grid1:hover .grid1-icon {
+    background-color: var(--grid1-icon-hover);
+}
+
+.grid1-h2 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.grid1-p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: var(--gray);
+}
+
+.main-grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.grid2 {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--grid2-background);
+
+}
+
+.grid2-p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.icon-grid2 {
+    fill: var(--blue);
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid var(--gray-input-border);
+    padding-top: 2rem;
+}
+
+.btns__a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.01em;
+    font-weight: 500;
+    color: var(--gray);
+    transition: color .4s ease;
+    text-decoration: none;
+}
+
+.btn__icon1 {
+    fill: var(--gray);
+    width: 16px;
+    transition: fill .4s ease;
+
+}
+
+.btns__a:hover {
+    color: var(--black);
+}
+
+.btns__a:hover svg {
+    fill: var(--black);
+}
+
+.btns__btn2 {
+    font-size: 1rem;
+    padding: 0.5rem 3rem;
+    font-weight: 400;
+    background-color: var(--blue);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--input-submit);
+    border: none;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.btns__btn2:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.btn__icon2 {
+    fill: var(--input-submit);
+    width: 16px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    background-color: var(--footer-backgruond);
+    width: 100%;
+    max-width: 1280px;
+}
+
+.footer-div-a {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.footer-div-a a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: var(--gray);
+    transition: color .3s ease;
+}
+
+.footer-div-a a:hover {
+    color: var(--blue);
+}
+
+.footer-p {
+    font-size: 0.75rem;
+    color: var(--gray);
+}
+
+@media (min-width: 368px) and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main-grid2 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .main-grid1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .btns {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav-p-already {
+        font-size: 0.6rem;
+    }
+}
